@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    id("com.google.gms.google-services")
 }
 
 android {
@@ -34,7 +35,8 @@ dependencies {
     implementation(libs.material)
     implementation(libs.activity)
     implementation(libs.constraintlayout)
-    implementation("com.hbb20:ccp:2.5.0")
+    implementation(libs.ccp)
+    implementation(libs.firebase.firestore)
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
     testImplementation(libs.junit)
