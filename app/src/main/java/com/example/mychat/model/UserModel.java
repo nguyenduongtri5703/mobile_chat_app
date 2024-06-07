@@ -8,6 +8,10 @@ public class UserModel {
     private Timestamp createdTimestamp;
     private String userId;
 
+    public UserModel(){
+
+    }
+
     public UserModel(String phone, String username, Timestamp createdTimestamp, String userId) {
         this.phone = phone;
         this.username = username;
