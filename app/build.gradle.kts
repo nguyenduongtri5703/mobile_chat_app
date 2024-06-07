@@ -42,4 +42,5 @@ dependencies {
     androidTestImplementation(libs.espresso.core)
     androidTestImplementation(libs.ext.junit)
     testImplementation(libs.junit)
+    implementation("com.hbb20:ccp:2.7.3")
 }

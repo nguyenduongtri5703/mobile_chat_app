@@ -84,13 +84,14 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:layout_weight="5">
-        
+
         <com.hbb20.CountryCodePicker
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:ccp_showFlag="false"
             app:ccp_showNameCode="false"
             android:id="@+id/login_countrycode"/>
+
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

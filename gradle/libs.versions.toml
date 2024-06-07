@@ -12,7 +12,7 @@ googleServices = "4.4.2"
 firebaseFirestore = "25.0.0"
 
 [libraries]
-ccp = { module = "com.hbb20:ccp", version.ref = "ccp" }
+ccp = { module = "com.hbb20:ccp", version = "2.7.3" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
