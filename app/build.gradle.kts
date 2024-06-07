@@ -43,4 +43,5 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     testImplementation(libs.junit)
     implementation("com.hbb20:ccp:2.7.3")
+    implementation("com.firebaseui:firebase-ui-firestore:8.0.2")
 }
