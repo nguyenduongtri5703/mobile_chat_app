@@ -66,7 +66,7 @@ public class ChatActivity extends AppCompatActivity {
 
 
         backBtn.setOnClickListener(v -> {
-            Intent intent = new Intent(this, SearchUserActivity.class);
+            Intent intent = new Intent(this, MainActivity.class);
             startActivity(intent);
 //            onBackPressed();
         });
@@ -111,6 +111,7 @@ public class ChatActivity extends AppCompatActivity {
 
         chatroomModel.setLastMessageTimeStamp(Timestamp.now());
         chatroomModel.setLastMessageSenderId(FirebaseUtil.currentUserId());
+        chatroomModel.setLastMessage(message);
         FirebaseUtil.getChatroomReference(chatroomId).set(chatroomModel);
 
 
