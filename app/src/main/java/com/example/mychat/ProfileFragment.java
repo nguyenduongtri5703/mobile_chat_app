@@ -80,9 +80,9 @@ public class ProfileFragment extends Fragment {
         });
 
         logoutBtn.setOnClickListener(v -> {
-            FirebaseMessaging.getInstance().getToken().addOnCompleteListener(new OnCompleteListener<String>() {
+            FirebaseMessaging.getInstance().deleteToken().addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
-                public void onComplete(@NonNull Task<String> task) {
+                public void onComplete(@NonNull Task<Void> task) {
                     if (task.isSuccessful()){
                         FirebaseUtil.logout();
                         Intent intent = new Intent(getContext(), SplashActivity.class);
